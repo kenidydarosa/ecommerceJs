@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+* {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --color-body: #f2f2f2;
+  --color-buttons: #0077ed;
+  --color-main: #fff;
+  --color-icons: #333333;
+}
+body {
+  background-color: var(--color-body);
+  margin: 0;
+  width: 100wh;
+  height: 100dvh;
+}
+nav {
+  display: flex;
+  justify-content: center;
+}
+#global-nav {
+  width: 1024px;
+  max-width: 1024px;
+}
+#menu-nav {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+li {
+  all: unset;
+  padding: 5px;
+  font-size: 12px;
+  cursor: pointer;
+}
+main {
+  margin-top: 30px;
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-main);
+  max-width: 1024px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#details {
+  width: 32%;
+}
+#description-details {
+  justify-content: space-between;
+  padding-bottom: 30px;
+  font-size: 12px;
+}
+#price-product {
+  font-size: 17px;
+}
+h1 {
+  font-size: 1.6rem;
+  text-align: justify;
+  padding: 10px 0;
+}
+
+#color-options img {
+  width: 32px;
+}
+#select-colors {
+  padding: 15px 0;
+}
+#selo span {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+#size-models {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  gap: 10px;
+}
+.size-buttons {
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid var(--color-buttons);
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+#learn-more div {
+  font-size: 14px;
+}
+#size-bracelet {
+  padding: 20px 0;
+  font-size: 14px;
+}
+#delivery-info {
+  display: flex;
+  font-size: 13px;
+  & svg {
+    width: 40px;
+  }
+  margin-bottom: 30px;
+}
+#add-bag {
+  width: 100%;
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--color-buttons);
+  color: var(--color-main);
+  font-size: 14px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+#more-time,
+#need-help {
+  font-size: 13px;
+  text-align: justify;
+}
+input[type='radio'] {
+  display: none;
+}
+#options-img-product{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 25px;
+    cursor: pointer;
+}
+.img-small img{
+    width: 70px;
+    height: 70px;
+}
