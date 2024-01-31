@@ -11,6 +11,7 @@
   --color-buttons: #0077ed;
   --color-main: #fff;
   --color-icons: #333333;
+  --color-borders: #5c5a5a;
 }
 body {
   background-color: var(--color-body);
@@ -41,6 +42,8 @@ li {
 main {
   margin-top: 30px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   max-width: 100%;
   justify-content: center;
 }
@@ -59,7 +62,7 @@ section {
 }
 #description-details {
   justify-content: space-between;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   font-size: 12px;
 }
 #price-product {
@@ -70,12 +73,21 @@ h1 {
   text-align: justify;
   padding: 10px 0;
 }
-
+h3 {
+  padding: 5px 0;
+}
+#price-details div {
+  padding: 1px 0;
+}
 #color-options img {
   width: 32px;
 }
 #select-colors {
-  padding: 15px 0;
+  padding: 10px 0;
+}
+
+#size-options {
+  padding: 5px 0;
 }
 #selo span {
   padding: 10px 0;
@@ -90,21 +102,24 @@ h1 {
   gap: 10px;
 }
 .size-buttons {
-  padding: 20px;
+  padding: 25px 20px;
   width: 100%;
   text-align: center;
   cursor: pointer;
-  border: 1px solid var(--color-buttons);
+  border: 1px solid var(--color-borders);
   border-radius: 10px;
   font-weight: 500;
 }
 
 #learn-more div {
-  font-size: 14px;
+  font-size: 13px;
 }
 #size-bracelet {
   padding: 20px 0;
-  font-size: 14px;
+  font-size: 13px;
+}
+#bracelets-models {
+  padding-top: 10px;
 }
 #delivery-info {
   display: flex;
@@ -125,22 +140,34 @@ h1 {
   margin-bottom: 30px;
   cursor: pointer;
 }
-#more-time,
-#need-help {
+#more-time p,
+#more-time a,
+#sac {
   font-size: 13px;
   text-align: justify;
 }
 input[type='radio'] {
   display: none;
 }
-#options-img-product{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    gap: 25px;
-    cursor: pointer;
+#options-img-product {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 25px;
+  cursor: pointer;
 }
-.img-small img{
-    width: 70px;
-    height: 70px;
+.img-small img {
+  width: 70px;
+  height: 70px;
+}
+#save-to-before a {
+  display: flex;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+#need-help {
+  display: flex;
+  padding: 10px 0;
+  gap: 10px;
 }
